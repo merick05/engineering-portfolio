@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Engineering portfolio featuring selected projects, technical experience, and contact information."
+    />
+    <title>Your Name | Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="#top" aria-label="Return to home">YN<span>.</span></a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        data-menu-toggle
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-navigation" class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Engineering Portfolio · 2026</p>
+          <h1>I design practical solutions to <span>complex problems.</span></h1>
+          <p class="hero-intro">
+            I’m <strong>Your Name</strong>, an engineering student and builder focused on
+            thoughtful design, technical rigor, and measurable results.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work</a>
+            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="diagram">
+            <div class="diagram-orbit orbit-one"></div>
+            <div class="diagram-orbit orbit-two"></div>
+            <div class="diagram-axis axis-x"></div>
+            <div class="diagram-axis axis-y"></div>
+            <div class="diagram-node node-one"></div>
+            <div class="diagram-node node-two"></div>
+            <div class="diagram-node node-three"></div>
+            <div class="diagram-center">BUILD</div>
+          </div>
+          <p class="coordinate">40.7128° N / 74.0060° W</p>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="section-heading">
+          <p class="section-number">01 / About</p>
+          <h2>Engineering with intention.</h2>
+        </div>
+        <div class="about-content">
+          <p class="large-copy">
+            I turn ideas into reliable, testable, and human-centered systems.
+          </p>
+          <p>
+            Add a concise introduction here: your engineering discipline, the problems you
+            enjoy solving, and what distinguishes your approach. Keep it personal and specific.
+          </p>
+          <div class="quick-facts" aria-label="Quick facts">
+            <div>
+              <span class="fact-label">Discipline</span>
+              <strong>Your Engineering Field</strong>
+            </div>
+            <div>
+              <span class="fact-label">Based in</span>
+              <strong>Your City, State</strong>
+            </div>
+            <div>
+              <span class="fact-label">Currently</span>
+              <strong>Open to Opportunities</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section">
+        <div class="section-heading">
+          <p class="section-number">02 / Selected Work</p>
+          <h2>Featured projects.</h2>
+        </div>
+
+        <article class="project-card project-one">
+          <div class="project-media">
+            <div class="project-placeholder">
+              <span>Project image / CAD render</span>
+              <span class="placeholder-index">01</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Project 01</span>
+              <span>2026</span>
+            </div>
+            <h3>First Project Title</h3>
+            <p>
+              Explain the problem, your solution, and why it mattered. Lead with the result,
+              then briefly describe your individual contribution.
+            </p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li>Design</li>
+              <li>Analysis</li>
+              <li>Prototyping</li>
+            </ul>
+            <a class="text-link" href="#" aria-label="View First Project Title case study">
+              View case study <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card project-two">
+          <div class="project-media">
+            <div class="project-placeholder">
+              <span>Project image / test photo</span>
+              <span class="placeholder-index">02</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Project 02</span>
+              <span>2026</span>
+            </div>
+            <h3>Second Project Title</h3>
+            <p>
+              Quantify the outcome where possible. Include constraints you navigated, methods
+              you used, and the impact of the final result.
+            </p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li>Research</li>
+              <li>Modeling</li>
+              <li>Testing</li>
+            </ul>
+            <a class="text-link" href="#" aria-label="View Second Project Title case study">
+              View case study <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="skills section">
+        <div class="section-heading">
+          <p class="section-number">03 / Capabilities</p>
+          <h2>Tools and expertise.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <span class="skill-index">A</span>
+            <h3>Design</h3>
+            <p>CAD Modeling · Design for Manufacturing · Technical Drawings · Prototyping</p>
+          </div>
+          <div class="skill-group">
+            <span class="skill-index">B</span>
+            <h3>Analysis</h3>
+            <p>Data Analysis · Simulation · Technical Research · Experimental Design</p>
+          </div>
+          <div class="skill-group">
+            <span class="skill-index">C</span>
+            <h3>Build</h3>
+            <p>Fabrication · Programming · Testing · Technical Documentation</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <p class="section-number">04 / Contact</p>
+        <div class="contact-grid">
+          <h2>Let’s build something that works.</h2>
+          <div class="contact-details">
+            <p>
+              Have a project, role, or technical challenge in mind? I’d be glad to hear about it.
+            </p>
+            <a class="button button-light" href="mailto:you@example.com">you@example.com</a>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn profile">LinkedIn ↗</a>
+              <a href="#" aria-label="GitHub profile">GitHub ↗</a>
+              <a href="#" aria-label="Download résumé">Résumé ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Your Name</p>
+      <p>Designed &amp; built with care.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
