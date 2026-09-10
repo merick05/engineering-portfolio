@@ -9,6 +9,12 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
+[[headers]]
+  for = "/assets/resume.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "inline; filename=\"resume.pdf\""
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
