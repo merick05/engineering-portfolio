@@ -188,8 +188,7 @@ a {
   gap: clamp(2.5rem, 7vw, 6rem);
 }
 
-.eyebrow,
-.section-number {
+.eyebrow {
   margin: 0 0 1.25rem;
   color: var(--gold);
   font-family: "Space Grotesk", sans-serif;
@@ -205,6 +204,16 @@ a {
   margin-bottom: 1.5rem;
   border: 1px solid rgba(201, 164, 92, 0.45);
   background: rgba(201, 164, 92, 0.12);
+}
+
+.section-number {
+  margin: 0;
+  color: var(--gold);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 h1,
@@ -261,7 +270,8 @@ h1 {
 
 h2 {
   margin-bottom: 0;
-  font-size: clamp(2.2rem, 4.6vw, 4.1rem);
+  color: var(--gold);
+  font-size: clamp(2.5rem, 5.4vw, 4.8rem);
   letter-spacing: -0.045em;
 }
 
@@ -421,8 +431,9 @@ h2 {
 
 .section-heading {
   display: grid;
+  align-items: baseline;
   margin-bottom: clamp(2.5rem, 6vw, 5rem);
-  grid-template-columns: minmax(160px, 0.45fr) 1.55fr;
+  grid-template-columns: minmax(70px, 0.15fr) 1.85fr;
   gap: 2rem;
 }
 
@@ -476,15 +487,39 @@ h2 {
 }
 
 .project-card {
-  display: grid;
-  padding: clamp(1.75rem, 4vw, 3.25rem) 0;
+  padding: clamp(2.25rem, 5vw, 4rem) 0;
   border-top: 1px solid var(--line-strong);
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
-  gap: clamp(1.75rem, 5vw, 4.5rem);
 }
 
 .project-card:last-child {
   border-bottom: 1px solid var(--line-strong);
+}
+
+.project-header {
+  max-width: 640px;
+  margin: 0 auto clamp(2rem, 4.5vw, 3rem);
+  text-align: center;
+}
+
+.project-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  letter-spacing: -0.04em;
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: clamp(1.75rem, 5vw, 4.5rem);
 }
 
 .project-media {
@@ -495,10 +530,6 @@ h2 {
 
 .project-two .project-media {
   background: #153044;
-}
-
-.project-three .project-media {
-  background: #1c2c22;
 }
 
 .project-placeholder {
@@ -541,24 +572,6 @@ h2 {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-}
-
-.project-meta {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 1.75rem;
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.project-content h3 {
-  margin-bottom: 1rem;
-  font-size: clamp(1.7rem, 3vw, 2.7rem);
-  letter-spacing: -0.04em;
 }
 
 .project-content p {
@@ -727,7 +740,7 @@ h2 {
     border-bottom: 1px solid var(--line);
   }
 
-  .project-card {
+  .project-body {
     grid-template-columns: 1fr;
   }
 
