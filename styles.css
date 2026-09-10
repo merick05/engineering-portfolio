@@ -587,6 +587,53 @@ h2 {
   border: 1px solid var(--line);
 }
 
+/* Split layout: image + text side-by-side */
+.project-extra--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  margin: 2.5rem 0 4rem 0;
+}
+.project-extra--split .extra-media {
+  width: 100%;
+  max-height: 560px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-extra--split .extra-media .project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  background: var(--paper-deep);
+}
+.project-extra--split .extra-text h4 {
+  margin-top: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+  color: var(--ink);
+}
+.project-extra--split .extra-text p {
+  color: rgba(20,33,27,0.78);
+  max-width: 52ch;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .project-extra--split {
+    grid-template-columns: 1fr;
+  }
+  .project-extra--split .extra-media {
+    order: 0;
+  }
+  .project-extra--split .extra-text {
+    order: 1;
+  }
+}
+
 .project-content {
   display: flex;
   align-items: flex-start;
